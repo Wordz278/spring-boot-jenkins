@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
     @GetMapping("/hello/{first_name}")
-    public String Hello(@PathVariable("fist_name") String name){
+    public String Hello(@PathVariable("first_name") String name){
         return "Hello %s welcome to Spring Boot Application".formatted(name);
     }
 }
